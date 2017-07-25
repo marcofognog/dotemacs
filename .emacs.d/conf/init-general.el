@@ -59,6 +59,7 @@
                  '(progn
                     (define-key ruby-mode-map (kbd "C-c b")
                                 (lambda () (interactive) (async-shell-command "bundle install" "**Bundler**")))))
+(setq ruby-indent-level 2)
 
 ;; Set the color of current line highlighting
 (set-face-background 'hl-line "#3e4446")
