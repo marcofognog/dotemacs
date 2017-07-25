@@ -68,5 +68,7 @@
 ;; invert the color of the background
 (set-face-inverse-video 'highlight t)
 
+(setq-default fill-column 80)
+
 (provide 'init-general)
 ;;; init-general.el ends here
