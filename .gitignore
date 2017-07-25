@@ -1,0 +1,5 @@
+*.elc
+elpa/
+eshell/
+auto-save-list
+.emacs.d/projectile-bookmarks.eld
