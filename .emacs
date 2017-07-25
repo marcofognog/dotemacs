@@ -18,4 +18,5 @@
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
 (require 'init-projectile)
 (require 'init-magit)
+(require 'init-ui)
 
