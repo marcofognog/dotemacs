@@ -55,9 +55,5 @@
 ;; Undo and Redo windows
 (winner-mode 1)
 
-;; Transparency
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
-
 (provide 'init-ui)
 ;;; init-ui.el ends here
