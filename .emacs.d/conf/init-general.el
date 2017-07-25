@@ -59,5 +59,13 @@
                  '(progn
                     (define-key ruby-mode-map (kbd "C-c b")
                                 (lambda () (interactive) (async-shell-command "bundle install" "**Bundler**")))))
+
+;; Set the color of current line highlighting
+(set-face-background 'hl-line "#3e4446")
+;; keep syntax highlighting
+(set-face-foreground 'highlight nil)
+;; invert the color of the background
+(set-face-inverse-video 'highlight t)
+
 (provide 'init-general)
 ;;; init-general.el ends here
