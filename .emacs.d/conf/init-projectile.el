@@ -27,7 +27,6 @@
 
 (require 'projectile)
 
-(global-set-key (kbd "C-x f") 'helm-projectile)
 (global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
 
 (projectile-global-mode)
