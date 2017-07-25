@@ -21,4 +21,4 @@
 (require 'init-projectile)
 (require 'init-magit)
 (require 'init-ui)
-
+(require 'init-helm)
