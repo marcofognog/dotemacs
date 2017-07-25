@@ -12,9 +12,6 @@
                           '("melpa-stable" . "https://stable.melpa.org/packages/") t))
 (package-initialize) ;; You might already have this line
 
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
-
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "vendor" user-emacs-directory))
 
@@ -24,3 +21,4 @@
 (require 'init-ui)
 (require 'init-helm)
 (require 'init-rspec)
+(require 'init-general)
