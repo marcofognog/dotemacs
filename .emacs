@@ -16,9 +16,11 @@
 (load custom-file)
 
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "vendor" user-emacs-directory))
 
 (require 'init-evil)
 (require 'init-projectile)
 (require 'init-magit)
 (require 'init-ui)
 (require 'init-helm)
+(require 'init-rspec)
