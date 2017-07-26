@@ -68,6 +68,9 @@
 ;; invert the color of the background
 (set-face-inverse-video 'highlight t)
 
+(set-face-attribute 'helm-selection nil
+                    :background "purple"
+                    :foreground "black")
 (setq-default fill-column 80)
 
 (provide 'init-general)
