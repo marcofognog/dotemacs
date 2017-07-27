@@ -73,5 +73,8 @@
                     :foreground "black")
 (setq-default fill-column 80)
 
+;; no delay
+(setq echo-keystrokes 0.01)
+
 (provide 'init-general)
 ;;; init-general.el ends here
