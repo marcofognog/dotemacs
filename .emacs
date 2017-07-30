@@ -22,3 +22,4 @@
 (require 'init-helm)
 (require 'init-rspec)
 (require 'init-general)
+(require 'init-custom)
