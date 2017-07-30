@@ -24,6 +24,7 @@
 ;;
 
 ;;; Code:
+(require 'rubocop)
 
 (setq
   ;; disable backup files
