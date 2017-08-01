@@ -9,7 +9,9 @@
                     (not (gnutls-available-p))))
        (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
 (add-to-list 'package-archives
-                          '("melpa-stable" . "https://stable.melpa.org/packages/") t))
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize) ;; You might already have this line
 
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
