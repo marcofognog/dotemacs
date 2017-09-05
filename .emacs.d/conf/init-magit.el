@@ -29,6 +29,7 @@
 
 (global-set-key (kbd "C-c f") 'magit-status)
 (global-set-key (kbd "C-c d") 'magit-checkout)
+(global-set-key (kbd "C-c s") 'magit-log-head)
 
 ;; Magit, dont fuck with me!
 (setq magit-push-always-verify nil)
