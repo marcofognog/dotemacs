@@ -7,7 +7,10 @@
  '(blink-cursor-mode nil)
  '(package-selected-packages
    (quote
-    (auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack))))
+    (auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+ '(rspec-use-rake-when-possible nil)
+ '(rspec-use-rvm t)
+ '(wdired-allow-to-change-permissions (quote advanced)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
