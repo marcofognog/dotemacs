@@ -11,3 +11,8 @@
 (global-set-key (kbd "C-c s") 'magit-log-head)
 
 (global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
+
+(global-set-key (kbd "M-u") 'previous-buffer)
+(global-set-key (kbd "M-i") 'next-buffer)
+
+(provide 'init-keybindings)
