@@ -25,3 +25,4 @@
 (require 'init-rspec)
 (require 'init-general)
 (require 'init-custom)
+(require 'init-keybindings)
