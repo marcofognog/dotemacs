@@ -79,3 +79,5 @@
 
 (provide 'init-general)
 ;;; init-general.el ends here
+
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
