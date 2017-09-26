@@ -16,4 +16,6 @@
 (global-set-key (kbd "C-c q") 'eshell)
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 
+(add-hook 'after-save-hook 'evil-force-normal-state)
+
 (provide 'init-keybindings)
