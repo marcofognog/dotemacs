@@ -26,4 +26,16 @@
                    ,(rx (or "#" "=begin"))                   ; Comment start
                    ruby-forward-sexp nil)))
 
+(defvar hs-hide nil "Current state of hideshow for toggling all.")
+;;;###autoload
+(defun toggle-hideshow-all () "Toggle hideshow all."
+  (interactive)
+  (setq my-hs-hide (not my-hs-hide))
+  (if my-hs-hide
+      (hs-hide-all)
+    (hs-show-all)))
+
+(global-set-key (kbd "C-c h") 'toggle-hideshow-all)
+(global-set-key (kbd "C-c s") 'hs-show-block)
+
 (provide 'init-keybindings)
