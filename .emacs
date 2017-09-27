@@ -5,13 +5,9 @@
 ;; You may delete these explanatory comments.
 ;;
 (require 'package) ;; You might already have this line
-(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
-                    (not (gnutls-available-p))))
-       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t))
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+             ("marmalade" . "http://marmalade-repo.org/packages/")
+             ("melpa" . "http://melpa.milkbox.net/packages/")))
 (package-initialize) ;; You might already have this line
 
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
