@@ -77,6 +77,9 @@
 ;; no delay
 (setq echo-keystrokes 0.01)
 
+;; treat words with underscores as one word
+(add-hook 'ruby-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
