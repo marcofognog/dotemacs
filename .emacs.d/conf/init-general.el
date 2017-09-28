@@ -80,6 +80,10 @@
 ;; treat words with underscores as one word
 (add-hook 'ruby-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
 
+;; set scrolling to vim like and stop doing wierd jumps
+(setq scroll-step 1)
+(setq scroll-margin 10)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
