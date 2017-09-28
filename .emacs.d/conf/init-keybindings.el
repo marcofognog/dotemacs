@@ -13,7 +13,7 @@
 (global-set-key (kbd "M-u") 'previous-buffer)
 (global-set-key (kbd "M-i") 'next-buffer)
 
-(global-set-key (kbd "C-c q") 'eshell)
+(global-set-key (kbd "C-c q") 'projectile-run-eshell)
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 
 (add-hook 'after-save-hook 'evil-force-normal-state)
