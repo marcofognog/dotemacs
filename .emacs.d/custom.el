@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(auto-dim-other-buffers-mode t)
  '(blink-cursor-mode nil)
+ '(dired-dwim-target t)
  '(package-selected-packages
    (quote
     (auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
