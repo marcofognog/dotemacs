@@ -38,4 +38,6 @@
 (global-set-key (kbd "C-c h") 'toggle-hideshow-all)
 (global-set-key (kbd "C-c s") 'hs-show-block)
 
+(global-set-key (kbd "C-x z") 'delete-other-windows)
+
 (provide 'init-keybindings)
