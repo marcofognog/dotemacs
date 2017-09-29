@@ -57,9 +57,9 @@
 (setq whitespace-style '(face trailing tabs))
 
 (eval-after-load 'ruby-mode
-                 '(progn
-                    (define-key ruby-mode-map (kbd "C-c b")
-                                (lambda () (interactive) (async-shell-command "bundle install" "**Bundler**")))))
+  '(progn
+     (define-key ruby-mode-map (kbd "C-c b")
+       (lambda () (interactive) (async-shell-command "bundle install" "**Bundler**")))))
 (setq ruby-indent-level 2)
 
 ;; Set the color of current line highlighting
