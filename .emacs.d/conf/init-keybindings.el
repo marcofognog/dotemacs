@@ -42,4 +42,6 @@
 
 (global-set-key (kbd "C-x z") 'delete-other-windows)
 
+(global-set-key (kbd "C-c a") 'helm-projectile-grep)
+
 (provide 'init-keybindings)
