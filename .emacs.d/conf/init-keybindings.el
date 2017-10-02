@@ -1,4 +1,5 @@
-(global-set-key (kbd "C-x k") 'kill-this-buffer)
+
+
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x m") 'helm-M-x)
@@ -26,7 +27,8 @@
                    ,(rx (or "#" "=begin"))                   ; Comment start
                    ruby-forward-sexp nil)))
 
-(defvar hs-hide nil "Current state of hideshow for toggling all.")
+(defvar my-hs-hide nil "Current state of hideshow for toggling all.")
+
 ;;;###autoload
 (defun toggle-hideshow-all () "Toggle hideshow all."
   (interactive)
