@@ -27,8 +27,8 @@
                    ,(rx (or "#" "=begin"))                   ; Comment start
                    ruby-forward-sexp nil)))
 
+;; folding functionality
 (defvar my-hs-hide nil "Current state of hideshow for toggling all.")
-
 ;;;###autoload
 (defun toggle-hideshow-all () "Toggle hideshow all."
   (interactive)
@@ -36,7 +36,7 @@
   (if my-hs-hide
       (hs-hide-all)
     (hs-show-all)))
-
+(add-hook 'ruby-mode-hook 'hs-minor-mode)
 (global-set-key (kbd "C-c h") 'toggle-hideshow-all)
 (global-set-key (kbd "C-c s") 'hs-show-block)
 
