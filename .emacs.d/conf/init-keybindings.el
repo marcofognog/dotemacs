@@ -45,4 +45,6 @@
 (global-set-key (kbd "C-c a") 'helm-projectile-grep)
 
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+
+(global-set-key (kbd "C-c e") 'delete-indentation)
 (provide 'init-keybindings)
