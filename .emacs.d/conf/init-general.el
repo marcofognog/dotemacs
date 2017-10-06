@@ -84,6 +84,9 @@
 (setq scroll-step 1)
 (setq scroll-margin 10)
 
+(add-hook 'prog-mode-hook 'turn-on-fci-mode)
+(add-hook 'text-mode-hook 'turn-on-fci-mode)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
