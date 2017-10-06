@@ -8,7 +8,7 @@
  '(dired-dwim-target t)
  '(package-selected-packages
    (quote
-    (auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+    (web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
  '(rspec-use-rake-when-possible nil)
  '(rspec-use-rvm t)
  '(wdired-allow-to-change-permissions (quote advanced)))

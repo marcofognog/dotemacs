@@ -22,3 +22,4 @@
 (require 'init-general)
 (require 'init-custom)
 (require 'init-keybindings)
+(require 'init-web-mode)
