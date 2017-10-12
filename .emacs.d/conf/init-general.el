@@ -89,6 +89,18 @@
 
 (setq js-indent-level 2)
 
+(add-hook 'after-save-hook 'evil-force-normal-state)
+
+(eval-after-load "hideshow"
+  '(add-to-list 'hs-special-modes-alist
+                 `(ruby-mode
+                   ,(rx (or "def" "it" "describe" "context" "{" "[")) ; Block start
+                   ,(rx (or "}" "]" "end"))                  ; Block end
+                   ,(rx (or "#" "=begin"))                   ; Comment start
+                   ruby-forward-sexp nil)))
+
+(add-hook 'ruby-mode-hook 'hs-minor-mode)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
