@@ -1,5 +1,6 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x m") 'helm-M-x)
+
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "s-V") 'helm-show-kill-ring)
@@ -24,5 +25,7 @@
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
 (global-set-key (kbd "C-c e") 'delete-indentation)
+
+(global-set-key (kbd "C-c r") 'rubocop-check-current-file)
 
 (provide 'init-keybindings)
