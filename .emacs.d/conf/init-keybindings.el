@@ -28,4 +28,6 @@
 
 (global-set-key (kbd "C-c r") 'rubocop-check-current-file)
 
+(global-set-key (kbd "C-x 4") 'toggle-window-split)
+
 (provide 'init-keybindings)
