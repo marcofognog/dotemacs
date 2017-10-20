@@ -58,4 +58,21 @@
     (set-window-buffer other this-buffer)
     (set-window-buffer this other-buffer)))
 
+(defun aj-toggle-fold ()
+  "Toggle fold all lines larger than indentation on current line."
+  (interactive)
+  (let ((col 1))
+    (save-excursion
+      (back-to-indentation)
+      (setq col (+ 1 (current-column)))
+      (set-selective-display
+       (if selective-display nil (or col 1))))))
+
+(defun beautify-json ()
+  (interactive)
+  (let ((b (if mark-active (min (point) (mark)) (point-min)))
+        (e (if mark-active (max (point) (mark)) (point-max))))
+    (shell-command-on-region b e
+     "python -mjson.tool" (current-buffer) t)))
+
 (provide 'init-fognog)
