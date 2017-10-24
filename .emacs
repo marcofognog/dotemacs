@@ -24,3 +24,4 @@
 (require 'init-keybindings)
 (require 'init-web-mode)
 (require 'init-fognog)
+(require 'init-ctrlnum)
