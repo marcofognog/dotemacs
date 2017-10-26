@@ -15,11 +15,11 @@
       (hs-hide-block)
     (hs-show-block)))
 
-(defun reverse-update-emacs-conf()
+(defun fognog-reverse-update-emacs-conf()
   (interactive)
   (async-shell-command "cd ~/projetos/dotemacs/ && make reverse-install"))
 
-(defun update-emacs-conf()
+(defun fognog-update-emacs-conf()
   (interactive)
   (async-shell-command "cd ~/projetos/dotemacs/ && make install"))
 
