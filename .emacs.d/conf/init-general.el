@@ -75,6 +75,8 @@
 
 (add-hook 'ruby-mode-hook 'hs-minor-mode)
 
+(highlight-parentheses-mode t)
+
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
