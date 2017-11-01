@@ -30,4 +30,6 @@
 
 (global-set-key (kbd "C-x 4") 'toggle-window-split)
 
+(global-set-key (kbd "C-x t w") 'transpose-words)
+
 (provide 'init-keybindings)
