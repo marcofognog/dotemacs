@@ -25,3 +25,4 @@
 (require 'init-web-mode)
 (require 'init-fognog)
 (require 'init-ctrlnum)
+(put 'downcase-region 'disabled nil)
