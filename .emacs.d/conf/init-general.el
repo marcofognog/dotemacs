@@ -78,6 +78,9 @@
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+(require 'multiple-cursors)
+(global-set-key (kbd "C-c y") 'mc/mark-next-like-this)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
