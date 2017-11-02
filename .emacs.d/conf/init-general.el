@@ -75,6 +75,9 @@
 
 (add-hook 'ruby-mode-hook 'hs-minor-mode)
 
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
