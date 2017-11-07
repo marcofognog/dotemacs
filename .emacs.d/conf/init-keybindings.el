@@ -32,4 +32,6 @@
 
 (global-set-key (kbd "C-x t w") 'transpose-words)
 
+(global-set-key (kbd "C-c t") (lambda () (interactive) (join-line -1)))
+
 (provide 'init-keybindings)
