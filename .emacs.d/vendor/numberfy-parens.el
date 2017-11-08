@@ -1,15 +1,44 @@
 (defvar numberfy-parens-positions)
 
-(defun numberfy-parens-buffer ()
+(defun numberfy-parens-in-buffer ()
   (interactive)
   (numberfy-parens-in-region (point-min) (point-max))
   )
 
-(defun numberfy-parens-defun ()
+(defun numberfy-parens-in-block()
   (interactive)
-  (mark-defun)
+  (numberfy-parens-mark-block)
   (numberfy-parens-in-region (region-beginning) (region-end))
   )
+
+(defun numberfy-parens-mark-block()
+  (numberfy-parens-goto-to-the-top-of-the-block)
+  (next-line)
+  (set-mark-command nil)
+  (numberfy-parens-goto-to-the-bottom-of-the-block)
+  (setq deactivate-mark nil)
+  )
+
+(defun numberfy-parens-goto-to-the-top-of-the-block ()
+  (if (numberfy-parens-current-line-empty-p)
+      nil
+    (previous-line)
+    (numberfy-parens-goto-to-the-top-of-the-block)
+    )
+  )
+
+(defun numberfy-parens-goto-to-the-bottom-of-the-block ()
+  (if (numberfy-parens-current-line-empty-p)
+      nil
+    (next-line)
+    (numberfy-parens-goto-to-the-bottom-of-the-block)
+    )
+  )
+
+(defun numberfy-parens-current-line-empty-p ()
+  (save-excursion
+    (beginning-of-line)
+    (looking-at "[[:space:]]*$")))
 
 (defun numberfy-parens-in-region (start end)
   (progn
@@ -80,5 +109,16 @@
     (put-text-property position (+ position 1) 'font-lock-face '(:foreground "white") (current-buffer))
     )
   )
+
+(define-minor-mode numberfy-parens-mode
+  "Reveal unbalanced parentheses by numbering them."
+  :lighter "numberfy-parens"
+  :global nil
+  :keymap (let ((map (make-sparse-keymap)))
+            (define-key map (kbd "C-c C-n") 'numberfy-parens-in-block)
+            (define-key map (kbd "C-c C-y") 'numberfy-parens-in-buffer)
+            map))
+
+(add-hook 'emacs-lisp-mode-hook 'numberfy-parens-mode)
 
 (provide 'numberfy-parens)
