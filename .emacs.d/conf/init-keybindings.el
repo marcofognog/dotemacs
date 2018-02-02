@@ -22,12 +22,11 @@
 
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
-(global-set-key (kbd "C-c e") 'delete-indentation)
-
 (global-set-key (kbd "C-c r") 'rubocop-check-current-file)
 
 (global-set-key (kbd "C-x 4") 'toggle-window-split)
 
+(global-set-key (kbd "C-c e") 'delete-indentation)
 (global-set-key (kbd "C-x t w") 'transpose-words)
 
 (global-set-key (kbd "C-c t") (lambda () (interactive) (join-line -1)))
