@@ -31,4 +31,6 @@
 
 (global-set-key (kbd "C-c t") (lambda () (interactive) (join-line -1)))
 
+(global-set-key (kbd "C-+") 'er/contract-region)
+
 (provide 'init-keybindings)
