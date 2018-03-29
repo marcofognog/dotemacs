@@ -2,6 +2,5 @@
 #group : definitions
 # key: def
 # --
-def ${1:method_name}
-  $0
+def ${0:method_name}
 end
