@@ -28,3 +28,4 @@
 (require 'init-numberfy-parens)
 
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
