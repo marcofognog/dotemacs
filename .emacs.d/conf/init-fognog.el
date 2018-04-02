@@ -75,4 +75,13 @@
     (shell-command-on-region b e
      "python -mjson.tool" (current-buffer) t)))
 
+(defun fognog-create-project()
+  "Creates a new project in the projects folder"
+  (interactive)
+   (setq new-project (read-string "New project's name: "))
+   (setq command (concat "mkdir ~/projetos/" new-project " && cd ~/projetos/" new-project " && git init ."))
+   (async-shell-command command)
+   (projectile-discover-projects-in-directory "~/projetos/")
+  )
+
 (provide 'init-fognog)
