@@ -84,4 +84,10 @@
    (projectile-discover-projects-in-directory "~/projetos/")
   )
 
+(defun fognog-discover-projects()
+  "Discover project folder"
+  (interactive)
+  (projectile-discover-projects-in-directory "~/projetos/")
+  )
+
 (provide 'init-fognog)
