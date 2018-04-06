@@ -83,6 +83,9 @@
 (require 'multiple-cursors)
 (global-set-key (kbd "C-c y") 'mc/mark-next-like-this)
 
+(require 'nav-line)
+(navline-mode)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
