@@ -33,4 +33,7 @@
 
 (global-set-key (kbd "C-+") 'er/contract-region)
 
+(global-set-key (kbd "C-c l l") 'display-unread-mail)
+(global-set-key (kbd "C-c l j") 'notmuch-exec-offlineimap)
+
 (provide 'init-keybindings)
