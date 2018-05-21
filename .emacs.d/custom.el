@@ -6,6 +6,7 @@
  '(auto-dim-other-buffers-mode t)
  '(blink-cursor-mode nil)
  '(dired-dwim-target t)
+ '(notmuch-search-oldest-first nil)
  '(package-selected-packages
    (quote
     (popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
