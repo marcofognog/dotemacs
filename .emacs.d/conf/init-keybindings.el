@@ -35,5 +35,6 @@
 
 (global-set-key (kbd "C-c l l") 'display-unread-mail)
 (global-set-key (kbd "C-c l j") 'notmuch-exec-offlineimap)
+(global-set-key (kbd "C-c l m") 'notmuch)
 
 (provide 'init-keybindings)
