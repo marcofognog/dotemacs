@@ -37,4 +37,6 @@
 (global-set-key (kbd "C-c l j") 'notmuch-exec-offlineimap)
 (global-set-key (kbd "C-c l m") 'notmuch)
 
+(global-set-key (kbd "C-c l k") 'browse-url-xdg-open)
+
 (provide 'init-keybindings)
