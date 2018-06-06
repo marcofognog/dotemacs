@@ -90,4 +90,16 @@
   (projectile-discover-projects-in-directory "~/projetos/")
   )
 
+(defun fognog-go-to-downloads-dired()
+  "Go to Downloads folder with dired"
+  (interactive)
+  (dired "~/Downloads")
+  )
+
+(defun fognog-go-to-home-dired()
+  "Go to home with dired"
+  (interactive)
+  (dired "~/")
+  )
+
 (provide 'init-fognog)

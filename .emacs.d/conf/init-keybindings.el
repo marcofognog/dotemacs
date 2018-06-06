@@ -39,4 +39,7 @@
 
 (global-set-key (kbd "C-c l k") 'browse-url-xdg-open)
 
+(global-set-key (kbd "C-c l d") 'fognog-go-to-downloads-dired)
+(global-set-key (kbd "C-c l h") 'fognog-go-to-home-dired)
+
 (provide 'init-keybindings)
