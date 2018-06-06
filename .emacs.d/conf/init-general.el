@@ -86,6 +86,9 @@
 (require 'nav-line)
 (navline-mode)
 
+(eval-after-load "dired-aux"
+   '(add-to-list 'dired-compress-file-suffixes
+                 '("\\.zip\\'" ".zip" "unzip")))
 (provide 'init-general)
 ;;; init-general.el ends here
 
