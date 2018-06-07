@@ -102,10 +102,13 @@
   (dired "~/")
   )
 
+(defun replace-in-string (what with in)
+  (replace-regexp-in-string (regexp-quote what) with in nil 'literal))
+
 (defun fognog-uncompress()
   "Uncompress file at point in dired"
   (interactive)
-  (setq compressed-filename (dired-get-filename))
+  (setq compressed-filename (replace-in-string "\s" "\\ " (dired-get-filename)))
   (setq command (concat "cd " dired-directory "; ~/./uncompress.sh " compressed-filename ))
   (async-shell-command command)
   (revert-buffer)
