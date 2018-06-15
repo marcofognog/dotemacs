@@ -15,14 +15,6 @@
       (hs-hide-block)
     (hs-show-block)))
 
-(defun fognog-reverse-update-emacs-conf()
-  (interactive)
-  (async-shell-command "cd ~/projetos/dotemacs/ && make reverse-install"))
-
-(defun fognog-update-emacs-conf()
-  (interactive)
-  (async-shell-command "cd ~/projetos/dotemacs/ && make install"))
-
 (defun toggle-window-split ()
   (interactive)
   (if (= (count-windows) 2)
