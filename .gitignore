@@ -8,3 +8,8 @@ auto-save-list
 /.emacs.d/recentf
 /.emacs.d/network-security.data
 /.emacs.d/url/cookies
+*.elc
+tramp
+url/
+/.emacs.d/session.*
+/.emacs.d/projectile.cache
