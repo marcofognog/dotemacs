@@ -13,6 +13,9 @@
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "vendor" user-emacs-directory))
 
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
 (require 'init-evil)
 (require 'init-projectile)
 (require 'init-magit)

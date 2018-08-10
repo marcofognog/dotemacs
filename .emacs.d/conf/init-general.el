@@ -18,9 +18,6 @@
 ;; enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
-
 ;; make indentation commands use space only
 (setq-default indent-tabs-mode nil)
 
