@@ -76,12 +76,6 @@
    (projectile-discover-projects-in-directory "~/projetos/")
   )
 
-(defun fognog-discover-projects()
-  "Discover project folder"
-  (interactive)
-  (projectile-discover-projects-in-directory "~/projetos/")
-  )
-
 (defun fognog-go-to-downloads-dired()
   "Go to Downloads folder with dired"
   (interactive)
