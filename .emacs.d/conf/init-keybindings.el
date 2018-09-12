@@ -42,4 +42,5 @@
 (global-set-key (kbd "C-c l d") 'fognog-go-to-downloads-dired)
 (global-set-key (kbd "C-c l h") 'fognog-go-to-home-dired)
 
+(global-set-key (kbd "C-c l n") 'fognog-notes)
 (provide 'init-keybindings)

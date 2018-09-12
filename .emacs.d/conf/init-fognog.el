@@ -100,4 +100,10 @@
   (revert-buffer)
   )
 
+(defun fognog-notes()
+  "Open notes file"
+  (interactive)
+  (find-file "~/notes.txt")
+  )
+
 (provide 'init-fognog)
