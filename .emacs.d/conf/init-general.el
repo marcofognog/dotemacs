@@ -86,6 +86,12 @@
 (eval-after-load "dired-aux"
    '(add-to-list 'dired-compress-file-suffixes
                  '("\\.zip\\'" ".zip" "unzip")))
+
+(defun my-flymd-browser-function (url)
+   (let ((browse-url-browser-function 'browse-url-firefox))
+     (browse-url url)))
+(setq flymd-browser-open-function 'my-flymd-browser-function)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 
