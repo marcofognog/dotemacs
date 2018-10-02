@@ -6,6 +6,9 @@
  '(auto-dim-other-buffers-mode t)
  '(blink-cursor-mode nil)
  '(dired-dwim-target t)
+ '(exec-path
+   (quote
+    ("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims")))
  '(notmuch-search-oldest-first nil)
  '(package-selected-packages
    (quote
