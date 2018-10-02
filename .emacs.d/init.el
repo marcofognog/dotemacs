@@ -34,6 +34,8 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
+;; Copy $PATH env from shell so elixir-mode can find mix in ~/./asdf folder
+(exec-path-from-shell-initialize)
 ;; Redefining this function makes it work -> possible bug in projectile?
 (defun projectile-discover-projects-in-directory (directory)
   "Discover any projects in DIRECTORY and add them to the projectile cache.
