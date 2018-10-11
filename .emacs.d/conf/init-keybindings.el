@@ -43,4 +43,6 @@
 (global-set-key (kbd "C-c l h") 'fognog-go-to-home-dired)
 
 (global-set-key (kbd "C-c l n") 'fognog-notes)
+
+(global-set-key (kbd "C-c l p") 'fognog-switch-project)
 (provide 'init-keybindings)

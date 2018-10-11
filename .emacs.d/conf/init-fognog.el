@@ -106,4 +106,10 @@
   (find-file "~/notes.txt")
   )
 
+(defun fognog-switch-project()
+  "Wrap discover-projectss with swtich-project"
+  (interactive)
+  (projectile-discover-projects-in-search-path)
+  (projectile-switch-project)
+  )
 (provide 'init-fognog)
