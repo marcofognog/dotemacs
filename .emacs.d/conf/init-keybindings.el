@@ -18,7 +18,7 @@
 
 (global-set-key (kbd "C-x z") 'delete-other-windows)
 
-(global-set-key (kbd "C-c a") 'helm-projectile-grep)
+(global-set-key (kbd "C-c l a") 'helm-projectile-grep)
 
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
