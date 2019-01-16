@@ -10,9 +10,10 @@
    (quote
     ("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims")))
  '(notmuch-search-oldest-first nil)
+ '(org-src-fontify-natively t)
  '(package-selected-packages
    (quote
-    (alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+    (ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
  '(projectile-use-git-grep t)
  '(restclient-log-request t)
  '(rspec-use-rake-when-possible nil)

@@ -103,7 +103,7 @@
 (defun fognog-notes()
   "Open notes file"
   (interactive)
-  (find-file "~/notes.txt")
+  (find-file "~/projetos/notes/notes.org")
   )
 
 (defun fognog-switch-project()
