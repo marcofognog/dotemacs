@@ -30,6 +30,7 @@
 (require 'init-mail)
 (require 'init-custom)
 (require 'init-keybindings)
+(require 'init-org-mode)
 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
