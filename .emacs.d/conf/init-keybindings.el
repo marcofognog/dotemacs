@@ -45,4 +45,7 @@
 (global-set-key (kbd "C-c l n") 'fognog-notes)
 
 (global-set-key (kbd "C-c l p") 'fognog-switch-project)
+
+(global-set-key (kbd "C-c l u") 'org-sort-by-todo)
+
 (provide 'init-keybindings)
