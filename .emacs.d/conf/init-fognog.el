@@ -112,4 +112,28 @@
   (projectile-discover-projects-in-search-path)
   (projectile-switch-project)
   )
+
+(defun fognog-autocommit-notes()
+  (interactive)
+
+  (switch-to-buffer "*Messages*")
+  (shell-command "cd ~/projetos/notes/ && git commit -am 'auto update' && git push origin master")
+)
+
+(defun fognog-notes-add-week()
+  (interactive)
+
+  (setq week-number (string-to-number (shell-command-to-string "date +%U")))
+  (setq correct-week-number (+ week-number 1))
+  (insert (format "* semana-%d
+** Mon
+** Tue
+** Wed
+** Thu
+** Fri
+** Sat
+** Sun
+" correct-week-number))
+          )
+
 (provide 'init-fognog)
