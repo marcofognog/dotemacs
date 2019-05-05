@@ -1,5 +1,8 @@
 (require 'rubocop)
 
+;; Fix error "dead-acute is undefined": accents were not displaying
+(require 'iso-transl)
+
 (setq
   ;; disable backup files
   make-backup-files nil
