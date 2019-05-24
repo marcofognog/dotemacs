@@ -50,4 +50,6 @@
 
 (global-set-key (kbd "C-c l u") 'org-sort-by-todo)
 
+(global-set-key (kbd "C-c l i") 'chmod-plus-x)
+
 (provide 'init-keybindings)

@@ -136,4 +136,9 @@
 " correct-week-number))
           )
 
+(defun chmod-plus-x ()
+  (interactive)
+  (shell-command-to-string (concat "chmod +x " (buffer-file-name (current-buffer))))
+  (revert-buffer))
+
 (provide 'init-fognog)
