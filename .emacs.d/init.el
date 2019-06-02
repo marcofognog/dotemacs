@@ -60,3 +60,4 @@ at the top level of DIRECTORY."
            (when (projectile-project-p)
              (projectile-add-known-project (projectile-project-root))))))
      subdirs)))
+(put 'narrow-to-region 'disabled nil)
