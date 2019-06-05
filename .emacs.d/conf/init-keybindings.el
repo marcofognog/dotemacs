@@ -52,4 +52,6 @@
 
 (global-set-key (kbd "C-c l i") 'chmod-plus-x)
 
+(global-set-key (kbd "C-c l q") 'helm-eshell-history)
+
 (provide 'init-keybindings)
