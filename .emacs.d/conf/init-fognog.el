@@ -141,4 +141,25 @@
   (shell-command-to-string (concat "chmod +x " (buffer-file-name (current-buffer))))
   (revert-buffer))
 
+(require 'subr-x)
+;; Usage
+;;(message "%s" (extract-path "experteer@lisbeth:/usr/experteer/www/roots/pjpp$\n"))
+(defun extract-path(line)
+  "Extract TRAMP path from prompt line"
+  (setq one (last (split-string line "@")))
+  (setq ar (split-string (pop one) "\\:"))
+  (setq two (last ar))
+  (setq host (pop ar))
+  (setq nobreak (replace-regexp-in-string "\n" "" (pop two)))
+  (setq three (replace-regexp-in-string "\\$" "" nobreak))
+  (string-trim (concat "/ssh:" host ":" three))
+  )
+
+(defun update-default-directory-from-shell()
+  (interactive)
+  (setq line (thing-at-point 'line t))
+  (setq default-directory (extract-path line))
+  (message "Default directory set to %s" default-directory)
+  )
+
 (provide 'init-fognog)
