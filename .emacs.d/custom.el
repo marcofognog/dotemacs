@@ -13,7 +13,7 @@
  '(org-src-fontify-natively t)
  '(package-selected-packages
    (quote
-    (ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+    (dirtrack-buffer-name-track-mode ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
  '(projectile-use-git-grep t)
  '(restclient-log-request t)
  '(rspec-use-rake-when-possible nil)
