@@ -9,6 +9,7 @@
  '(exec-path
    (quote
     ("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims")))
+ '(frame-background-mode (quote dark))
  '(notmuch-search-oldest-first nil)
  '(org-src-fontify-natively t)
  '(package-selected-packages
