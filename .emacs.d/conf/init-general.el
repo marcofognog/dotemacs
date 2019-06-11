@@ -97,6 +97,8 @@
      (browse-url url)))
 (setq flymd-browser-open-function 'my-flymd-browser-function)
 
+(server-start)
+
 (provide 'init-general)
 ;;; init-general.el ends here
 

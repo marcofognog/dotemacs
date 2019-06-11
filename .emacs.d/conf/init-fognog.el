@@ -162,4 +162,35 @@
   (message "Default directory set to %s" default-directory)
   )
 
+(defun new-eshell()
+  "Open a new instance of eshell."
+  (interactive)
+  (eshell 'N))
+
+(defun new-shell ()
+  "Open a new instance of shell."
+  (interactive)
+  (let (
+        (currentbuf (get-buffer-window (current-buffer)))
+        (newbuf     (generate-new-buffer-name "*shell*"))
+       )
+
+   (generate-new-buffer newbuf)
+   (set-window-dedicated-p currentbuf nil)
+   (set-window-buffer currentbuf newbuf)
+   (shell newbuf)
+  )
+)
+
+(defun shell-from-dired ()
+  (interactive)
+  (setq saved-dir default-directory)
+  (message "a %s" saved-dir)
+  (shell)
+  (with-current-buffer "*shell*"
+    (end-of-buffer)
+    (insert (concat "cd " saved-dir))
+    )
+  )
+
 (provide 'init-fognog)
