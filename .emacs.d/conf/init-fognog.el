@@ -193,4 +193,18 @@
     )
   )
 
+(defun ssh-lisbeth()
+  (interactive)
+  (find-file "/sshx:lisbeth:~")
+  )
+(defun ssh-kafka1()
+  (interactive)
+  (find-file "/sshx:kafka1:~")
+  )
+(defun ssh-stage()
+  (interactive)
+  (find-file "/sshx:stage:~")
+  )
+
+
 (provide 'init-fognog)
