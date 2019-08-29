@@ -33,6 +33,7 @@
 (require 'init-keybindings)
 (require 'init-org-mode)
 (require 'init-tramp-integration)
+(require 'init-babel)
 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
