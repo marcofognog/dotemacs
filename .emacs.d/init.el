@@ -64,3 +64,4 @@ at the top level of DIRECTORY."
              (projectile-add-known-project (projectile-project-root))))))
      subdirs)))
 (put 'narrow-to-region 'disabled nil)
+(put 'narrow-to-page 'disabled nil)
