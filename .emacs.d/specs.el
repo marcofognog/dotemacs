@@ -7,9 +7,9 @@
 
 (require 'init-toggle-truth)
 
-(ert-deftest turns-true-into-false ()
-  (setq initial-ruby-code "config.x.kafka.enabled = true")
-  (setq expected-ruby-code "config.x.kafka.enabled = false")
+(ert-deftest turns-true-into-false-only-in-the-line-at-point ()
+  (setq initial-ruby-code "config.x.kafka.enabled = true\nconfig.x.kafka.enabled = true")
+  (setq expected-ruby-code "config.x.kafka.enabled = false\nconfig.x.kafka.enabled = true")
 
   (get-buffer-create "sample")
   (set-buffer "sample")
@@ -19,6 +19,7 @@
     (insert initial-ruby-code)
     )
 
+  (goto-line 1)
   ;; exercise
   (toggle-truth)
 
