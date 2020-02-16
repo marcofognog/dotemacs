@@ -20,9 +20,13 @@
     )
 
   (goto-line 1)
+
   ;; exercise
   (toggle-truth)
 
   (should (string= (buffer-string) expected-ruby-code))
+
+  (toggle-truth)
+  (should (string= (buffer-string) initial-ruby-code))
   )
 
