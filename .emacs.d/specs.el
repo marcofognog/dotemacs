@@ -1,5 +1,8 @@
 (require 'ert)
 
+;; run with
+;; emacs -batch  -f toggle-debug-on-error -l ert -l .emacs.d/specs.el -f ert-run-tests-batch-and-exit
+
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
 
 (require 'init-toggle-truth)
@@ -16,7 +19,7 @@
     (insert initial-ruby-code)
     )
 
-  ; exercise
+  ;; exercise
   (toggle-truth)
 
   (should (string= (buffer-string) expected-ruby-code))
