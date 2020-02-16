@@ -26,6 +26,7 @@
 (require 'init-web-mode)
 (require 'init-fognog)
 (require 'init-ctrlnum)
+(require 'init-toggle-truth)
 (require 'init-numberfy-parens)
 (require 'init-mail)
 (require 'init-custom)
