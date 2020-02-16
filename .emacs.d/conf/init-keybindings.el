@@ -18,8 +18,6 @@
 
 (global-set-key (kbd "C-x z") 'delete-other-windows)
 
-(global-set-key (kbd "C-c l a") 'helm-projectile-grep)
-
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
 (global-set-key (kbd "C-c r") 'rubocop-check-current-file)
@@ -32,6 +30,9 @@
 (global-set-key (kbd "C-c t") (lambda () (interactive) (join-line -1)))
 
 (global-set-key (kbd "C-+") 'er/contract-region)
+
+(global-set-key (kbd "C-c l a") 'helm-projectile-grep)
+(global-set-key (kbd "C-c l b") 'toggle-truth)
 
 (global-set-key (kbd "C-c l l") 'display-unread-mail)
 (global-set-key (kbd "C-c l j") 'notmuch-exec-offlineimap)
