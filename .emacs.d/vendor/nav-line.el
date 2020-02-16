@@ -18,6 +18,26 @@
 (defun nav-line-8 () (interactive) (nav-line 8))
 (defun nav-line-9 () (interactive) (nav-line 9))
 
+(defun nav-file (number)
+  (progn
+    (setq number-of-slices 10)
+    (setq slice-size (/ (count-lines (point-min) (point-max)) number-of-slices))
+    (setq new-line-pos (* slice-size number))
+    (goto-line new-line-pos)
+    )
+  )
+
+
+(defun nav-file-1 () (interactive) (nav-file 1))
+(defun nav-file-2 () (interactive) (nav-file 2))
+(defun nav-file-3 () (interactive) (nav-file 3))
+(defun nav-line-4 () (interactive) (nav-line 4))
+(defun nav-line-5 () (interactive) (nav-line 5))
+(defun nav-line-6 () (interactive) (nav-line 6))
+(defun nav-line-7 () (interactive) (nav-line 7))
+(defun nav-line-8 () (interactive) (nav-line 8))
+(defun nav-line-9 () (interactive) (nav-line 9))
+
 (define-minor-mode navline-mode
   "Line navegation by numbering the portion you want to go."
   :lighter "navline"
