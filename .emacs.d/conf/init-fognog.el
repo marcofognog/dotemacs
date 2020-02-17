@@ -1,6 +1,7 @@
 (defvar fognog-toggle-fold-all nil "Current state of hideshow for toggling all blocks.")
 (defvar fognog-toggle-fold-block nil "Current state of hideshow for toggling block.")
 
+;; TODO scope the state by buffer
 (defun toggle-hideshow-all () "Toggle hideshow all."
   (interactive)
   (setq fognog-toggle-fold-all (not fognog-toggle-fold-all))
