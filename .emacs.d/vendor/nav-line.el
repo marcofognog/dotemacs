@@ -31,12 +31,12 @@
 (defun nav-file-1 () (interactive) (nav-file 1))
 (defun nav-file-2 () (interactive) (nav-file 2))
 (defun nav-file-3 () (interactive) (nav-file 3))
-(defun nav-line-4 () (interactive) (nav-line 4))
-(defun nav-line-5 () (interactive) (nav-line 5))
-(defun nav-line-6 () (interactive) (nav-line 6))
-(defun nav-line-7 () (interactive) (nav-line 7))
-(defun nav-line-8 () (interactive) (nav-line 8))
-(defun nav-line-9 () (interactive) (nav-line 9))
+(defun nav-file-4 () (interactive) (nav-file 4))
+(defun nav-file-5 () (interactive) (nav-file 5))
+(defun nav-file-6 () (interactive) (nav-file 6))
+(defun nav-file-7 () (interactive) (nav-file 7))
+(defun nav-file-8 () (interactive) (nav-file 8))
+(defun nav-file-9 () (interactive) (nav-file 9))
 
 (define-minor-mode navline-mode
   "Line navegation by numbering the portion you want to go."
