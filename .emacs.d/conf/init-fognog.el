@@ -125,7 +125,7 @@
   (interactive)
 
   (setq week-number (string-to-number (shell-command-to-string "date +%U")))
-  (setq correct-week-number (+ week-number 1))
+  (setq correct-week-number (+ week-number 2))
   (insert (format "* semana-%d
 ** Mon
 ** Tue
