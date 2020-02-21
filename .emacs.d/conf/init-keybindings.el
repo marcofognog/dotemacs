@@ -33,7 +33,7 @@
 
 (global-set-key (kbd "C-c l a") 'helm-projectile-grep)
 (global-set-key (kbd "C-c l b") 'toggle-truth)
-
+(global-set-key (kbd "C-c l c") 'fognog-autopull-notes)
 (global-set-key (kbd "C-c l l") 'display-unread-mail)
 (global-set-key (kbd "C-c l j") 'notmuch-exec-offlineimap)
 (global-set-key (kbd "C-c l m") 'notmuch)

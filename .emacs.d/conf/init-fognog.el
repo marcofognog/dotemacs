@@ -121,6 +121,13 @@
   (shell-command "cd ~/projetos/notes/ && git commit -am 'auto update' && git push origin master")
 )
 
+(defun fognog-autopull-notes()
+  (interactive)
+
+  (switch-to-buffer "*Messages*")
+  (shell-command "cd ~/projetos/notes/ && git pull origin master --rebase")
+)
+
 (defun fognog-notes-add-week()
   (interactive)
 
