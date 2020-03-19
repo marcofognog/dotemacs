@@ -99,13 +99,6 @@
 
 (server-start)
 
-;; fix to the issue
-;; 'netstat exited with status 1' when connection with magit to remote git repo
-;; https://github.com/magit/ssh-agency/issues/19
-(setq ssh-agency-socket-locaters
-      (assq-delete-all 'ssh-agency-find-socket-from-netstat
-		       ssh-agency-socket-locaters))
-
 (provide 'init-general)
 ;;; init-general.el ends here
 
