@@ -214,5 +214,9 @@
   (find-file "/sshx:stage:~")
   )
 
+(defun ssh-marie()
+  (interactive)
+  (find-file "/sshx:marie:~")
+  )
 
 (provide 'init-fognog)
