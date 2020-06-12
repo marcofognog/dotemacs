@@ -13,3 +13,4 @@ tramp
 url/
 /.emacs.d/session.*
 /.emacs.d/projectile.cache
+.emacs.d/thumbs
