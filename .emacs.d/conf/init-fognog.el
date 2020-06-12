@@ -68,6 +68,15 @@
     (shell-command-on-region b e
      "python -mjson.tool" (current-buffer) t)))
 
+(defun prettify-xml ()
+  (interactive)
+  (let
+      ((b (if mark-active (min (point) (mark)) (point-min)))
+       (e (if mark-active (max (point) (mark)) (point-max))))
+    (shell-command-on-region b e "xmllint --format - " (current-buffer) t))
+  )
+
+
 (defun fognog-create-project()
   "Creates a new project in the projects folder"
   (interactive)
