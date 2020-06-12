@@ -65,3 +65,10 @@ at the top level of DIRECTORY."
      subdirs)))
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
+
+(eval-when-compile
+  (require 'use-package))
+
+(use-package kubernetes
+  :ensure t
+  :commands (kubernetes-overview))
