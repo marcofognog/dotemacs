@@ -24,7 +24,6 @@
  '(rspec-use-rvm t)
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com" t)
- '(undo-limit 1000)
  '(user-mail-address "marcofognog@gmail.com")
  '(wdired-allow-to-change-permissions (quote advanced)))
 (custom-set-faces
