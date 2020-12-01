@@ -7,7 +7,7 @@
 (require 'package) ;; You might already have this line
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
              ("marmalade" . "http://marmalade-repo.org/packages/")
-             ("melpa" . "http://melpa.milkbox.net/packages/")))
+             ("melpa" . "https://melpa.org/packages/")))
 (package-initialize) ;; You might already have this line
 
 (add-to-list 'load-path (expand-file-name "conf" user-emacs-directory))
