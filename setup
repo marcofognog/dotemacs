@@ -3,6 +3,6 @@ set -euo pipefail
 
 __GIT_ROOT__=$(pwd)
 
-ln -sf "${__GIT_ROOT__}/.emacs.d" "${HOME}/.emacs.d"
+ln -sf "${__GIT_ROOT__}/.emacs.d" "${HOME}"
 
 echo -e "\e[0;32mDone!\e[0m"
