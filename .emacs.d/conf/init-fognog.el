@@ -210,24 +210,6 @@
     )
   )
 
-(defun ssh-lisbeth()
-  (interactive)
-  (find-file "/sshx:lisbeth:~")
-  )
-(defun ssh-kafka1()
-  (interactive)
-  (find-file "/sshx:kafka1:~")
-  )
-(defun ssh-stage()
-  (interactive)
-  (find-file "/sshx:stage:~")
-  )
-
-(defun ssh-marie()
-  (interactive)
-  (find-file "/sshx:marie:~")
-  )
-
 ;; fix to the issue
 ;; 'netstat exited with status 1' when connection with magit to remote git repo
 ;; https://github.com/magit/ssh-agency/issues/19
