@@ -203,6 +203,7 @@
 (defun ssh-teshub()
   (interactive)
   (find-file "/sshx:teshub:/root")
+  )
 
 (defun shell-from-dired ()
   (interactive)
