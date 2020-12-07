@@ -28,7 +28,6 @@
 (require 'init-ctrlnum)
 (require 'init-toggle-truth)
 (require 'init-numberfy-parens)
-(require 'init-mail)
 (require 'init-custom)
 (require 'init-keybindings)
 (require 'init-org-mode)
