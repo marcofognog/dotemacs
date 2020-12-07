@@ -78,9 +78,6 @@
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-(require 'multiple-cursors)
-(global-set-key (kbd "C-c y") 'mc/mark-next-like-this)
-
 (setq ruby-insert-encoding-magic-comment nil)
 
 (require 'nav-line)
