@@ -202,7 +202,7 @@
 ;; demodesk
 (defun ssh-teshub()
   (interactive)
-  (find-file "/sshx:teshub:/root")
+  (find-file "/sshx:teshub:/root/demodesk")
   )
 
 (defun shell-from-dired ()
