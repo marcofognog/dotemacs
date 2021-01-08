@@ -226,4 +226,10 @@
                          ssh-agency-socket-locaters))
   )
 
+(defun fix-ssh-auth-sock-env-var ()
+  (interactive)
+  (setq ssh_sock_location (shell-command-to-string "echo $SSH_AUTH_SOCK"))
+  (message ssh_sock_location)
+  (setenv "SSH_AUTH_SOCK" ssh_sock_location)
+  )
 (provide 'init-fognog)
