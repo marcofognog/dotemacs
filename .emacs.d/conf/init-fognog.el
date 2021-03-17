@@ -205,6 +205,25 @@
   (find-file "/sshx:teshub:/root/demodesk")
   )
 
+(defun ssh-cont-demodesk()
+  (interactive)
+  (find-file "/sshx:teshub|docker:root@demodesk-app:/myapp")
+  )
+
+(defun ssh-cont-rubocop()
+  (interactive)
+  (ssh-cont-demodesk)
+  (rubocop-check-project)
+  )
+
+
+;; rspec's output is too verbose by default in this project
+(defun ssh-cont-rspec()
+  (interactive)
+  (ssh-cont-demodesk)
+  (rspec-verify-all)
+  )
+
 (defun shell-from-dired ()
   (interactive)
   (setq saved-dir default-directory)

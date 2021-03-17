@@ -6,18 +6,20 @@
  '(ansi-color-names-vector
    ["orange" "red3" "green3" "yellow3" "deep sky blue" "magenta3" "cyan3" "gray90"])
  '(auto-dim-other-buffers-mode t)
+ '(auto-revert-remote-files t)
  '(blink-cursor-mode nil)
  '(dired-dwim-target t)
  '(exec-path
    (quote
     ("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims")))
  '(frame-background-mode (quote dark))
+ '(git-link-use-commit t)
  '(notmuch-search-oldest-first nil)
  '(org-babel-load-languages (quote ((awk . t) (awk . t) (sql . t))))
  '(org-src-fontify-natively t)
  '(package-selected-packages
    (quote
-    (gitlab-ci-mode vue-mode helm evil kubernetes kubernetes-evil use-package dockerfile-mode yaml-mode terraform-mode git-link rjsx-mode git-timemachine ht dired-narrow ox-gfm ob-async bash-completion dirtrack-buffer-name-track-mode ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+    (docker-tramp kubernetes-helm gitlab-ci-mode vue-mode helm evil kubernetes kubernetes-evil use-package dockerfile-mode yaml-mode terraform-mode git-link rjsx-mode git-timemachine ht dired-narrow ox-gfm ob-async bash-completion dirtrack-buffer-name-track-mode ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
  '(projectile-enable-caching t)
  '(projectile-use-git-grep t)
  '(restclient-log-request t)
