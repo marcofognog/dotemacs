@@ -44,6 +44,7 @@
 (global-set-key (kbd "C-c l h") 'fognog-go-to-home-dired)
 
 (global-set-key (kbd "C-c l n") 'fognog-notes)
+(global-set-key (kbd "C-c l w") 'fognog-work-notes)
 (global-set-key (kbd "C-c l y") 'fognog-autocommit-notes)
 (global-set-key (kbd "C-c l t") 'fognog-notes-add-week)
 
