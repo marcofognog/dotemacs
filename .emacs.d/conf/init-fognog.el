@@ -216,6 +216,11 @@
   (find-file "/sshx:teshub|docker:root@demodesk-app:/myapp")
   )
 
+(defun ssh-cont-storybook()
+  (interactive)
+  (find-file "/sshx:teshub|docker:root@demodesk-storybook:/usr/src/app/src")
+  )
+
 (defun ssh-cont-rubocop()
   (interactive)
   (ssh-cont-demodesk)
