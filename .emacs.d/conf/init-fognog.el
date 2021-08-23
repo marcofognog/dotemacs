@@ -116,6 +116,12 @@
   (find-file "~/projetos/notes/notes.org")
   )
 
+(defun fognog-work-notes()
+  "Open work notes file"
+  (interactive)
+  (find-file "~/projetos/notes/demodesk.org")
+  )
+
 (defun fognog-switch-project()
   "Wrap discover-projectss with swtich-project"
   (interactive)
