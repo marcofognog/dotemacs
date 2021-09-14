@@ -41,6 +41,9 @@
 (add-hook 'elixir-mode-hook
           (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
 
+(add-hook 'vue-mode-hook
+          (lambda () (display-line-numbers-mode)))
+
 ;; Redefining this function makes it work -> possible bug in projectile?
 (defun projectile-discover-projects-in-directory (directory)
   "Discover any projects in DIRECTORY and add them to the projectile cache.
