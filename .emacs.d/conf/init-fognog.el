@@ -216,6 +216,12 @@
   (find-file "/sshx:teshub|docker:root@demodesk-app:/myapp")
   )
 
+(defun open-current-file-in-demo-cont()
+  (interactive)
+  (setq relative-file-path (last (split-string buffer-file-name "/backend")))
+  (find-file (concat "/sshx:teshub|docker:root@demodesk-app:/myapp/" (car relative-file-path)))
+  )
+
 (defun ssh-cont-storybook()
   (interactive)
   (find-file "/sshx:teshub|docker:root@demodesk-storybook:/usr/src/app/src")
