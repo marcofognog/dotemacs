@@ -218,14 +218,25 @@
 
 (defun open-current-file-in-demo-cont()
   (interactive)
+  (setq previous-line (line-number-at-pos))
   (setq relative-file-path (last (split-string buffer-file-name "/backend")))
   (find-file (concat "/sshx:teshub|docker:root@demodesk-app:/myapp/" (car relative-file-path)))
+  (goto-line previous-line)
   )
 
 (defun open-current-file-out-demo-cont()
   (interactive)
+  (setq previous-line (line-number-at-pos))
   (setq relative-file-path (last (split-string buffer-file-name "/myapp")))
   (find-file (concat "/sshx:teshub:/root/demodesk/backend/" (car relative-file-path)))
+  (goto-line previous-line)
+  )
+
+(defun cont-rspec-verify-single()
+  (interactive)
+  (open-current-file-in-demo-cont)
+  (rspec-verify-single)
+  (open-current-file-out-demo-cont)
   )
 
 (defun ssh-cont-storybook()
