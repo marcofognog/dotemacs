@@ -10,25 +10,24 @@
  '(blink-cursor-mode nil)
  '(dired-dwim-target t)
  '(exec-path
-   (quote
-    ("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims")))
- '(frame-background-mode (quote dark))
+   '("/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/usr/local/libexec/emacs/26.1/x86_64-pc-linux-gnu" "/home/marco/.asdf/shims"))
+ '(frame-background-mode 'dark)
  '(git-link-use-commit t)
  '(notmuch-search-oldest-first nil)
- '(org-babel-load-languages (quote ((awk . t) (awk . t) (sql . t))))
+ '(org-babel-load-languages '((awk . t) (awk . t) (sql . t)))
  '(org-src-fontify-natively t)
+ '(package-check-signature nil)
  '(package-selected-packages
-   (quote
-    (docker-tramp kubernetes-helm gitlab-ci-mode vue-mode helm evil kubernetes kubernetes-evil use-package dockerfile-mode yaml-mode terraform-mode git-link rjsx-mode git-timemachine ht dired-narrow ox-gfm ob-async bash-completion dirtrack-buffer-name-track-mode ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack)))
+   '(gnu-elpa-keyring-update ## docker-tramp kubernetes-helm gitlab-ci-mode vue-mode helm evil kubernetes kubernetes-evil use-package dockerfile-mode yaml-mode terraform-mode git-link rjsx-mode git-timemachine ht dired-narrow ox-gfm ob-async bash-completion dirtrack-buffer-name-track-mode ssh-agency ox-twbs alchemist exec-path-from-shell flymd apib-mode elixir-mode ruby-hash-syntax undo-tree projectile yasnippet markdown-mode highlight-parentheses popwin notmuch restclient expand-region multiple-cursors web-mode auto-dim-other-buffers inf-ruby fill-column-indicator rubocop rspec-mode magit helm-projectile heap goto-last-change flycheck ack))
  '(projectile-enable-caching t)
  '(projectile-use-git-grep t)
  '(restclient-log-request t)
  '(rspec-use-rake-when-possible nil)
  '(rspec-use-rvm t)
- '(send-mail-function (quote smtpmail-send-it))
+ '(send-mail-function 'smtpmail-send-it)
  '(smtpmail-smtp-server "smtp.googlemail.com" t)
  '(user-mail-address "marcofognog@gmail.com")
- '(wdired-allow-to-change-permissions (quote advanced)))
+ '(wdired-allow-to-change-permissions 'advanced))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

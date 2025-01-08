@@ -1,5 +1,3 @@
-(require 'helm-config)
-
 (helm-mode t)
 
 (setq helm-quick-update t
